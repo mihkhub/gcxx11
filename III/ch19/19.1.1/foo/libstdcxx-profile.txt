@@ -1,0 +1,2 @@
+vector-to-list: improvement = 5: call stack = 0x403443 0x406558 0x40a1e6 0x403106 0x7f8494a10b35 0x402ea9 : advice = change std::vector to std::list
+vector-size: improvement = 3: call stack = 0x403443 0x405af7 0x40a1b9 0x403106 0x7f8494a10b35 0x402ea9 : advice = change initial container size from 0 to 1024
