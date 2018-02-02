@@ -1,0 +1,11 @@
+#!/bin/sh
+CMD=`which g++`
+case $0 in
+  */*)
+    dir=${0%/*}
+    if test -x "$dir/CMD"; then
+      PATH=$dir:$PATH
+      CMD=CMD
+    fi;;
+esac
+exec $CMD -std=gnu++11 "$@"
