@@ -4,5 +4,4 @@ rule cc
     command = g++-11 $cflags $in -o $out
     
 build use_codecvt: cc use_codecvt.cc
-build utf: cc utf.cc
-build csv: cc csv.cc
+build zh2utf8_file: cc zh2utf8_file.cc
