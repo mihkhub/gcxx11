@@ -1,0 +1,8 @@
+cflags = -Wall
+
+rule cc
+    command = g++-11 $cflags $in -o $out
+    
+build use_codecvt: cc use_codecvt.cc
+build utf: cc utf.cc
+build csv: cc csv.cc
